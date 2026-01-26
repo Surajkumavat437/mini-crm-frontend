@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Fix Chrome autofill background */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #1e293b inset !important; /* slate-800 */
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
